@@ -155,6 +155,42 @@ C.waitKey(0)
 ## Output:
 ![image](https://user-images.githubusercontent.com/72547536/104432659-14c94480-553e-11eb-9b77-5604294c40fe.png)
 
+##program 7:Develop a program to find the neighbours of each element in the matrix.
+import numpy as np
+
+M = [[1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]]
+
+M = np.asarray(M)
+N = np.zeros(M.shape)
+def sumNeighbors(M,x,y):
+    l = []
+    for i in range(max(0,x-1),x+2): # max(0,x-1), such that no negative values in range()
+        for j in range(max(0,y-1),y+2):
+            try:
+                t = M[i][j]
+                l.append(t)
+            except IndexError:
+                pass
+    return sum(l)-M[x][y] 
+for i in range(M.shape[0]):
+    for j in range(M.shape[1]):
+        N[i][j] = sumNeighbors(M, i, j)
+
+print ("Original matrix:\n", M)
+print ("Summed neighbors matrix:\n", N)
+
+## output:
+Original matrix:
+ [[1 2 3]
+ [4 5 6]
+ [7 8 9]]
+Summed neighbors matrix:
+ [[11. 19. 13.]
+ [23. 40. 27.]
+ [17. 31. 19.]]
+
 
 
 
