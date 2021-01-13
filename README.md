@@ -156,6 +156,10 @@ C.waitKey(0)
 ![image](https://user-images.githubusercontent.com/72547536/104432659-14c94480-553e-11eb-9b77-5604294c40fe.png)
 
 ##program 7:Develop a program to find the neighbours of each element in the matrix.
+## description:
+## np.asarray():numpy.asarray()function is used when we want to convert input to an array. Input can be lists, lists of tuples, tuples, tuples of tuples, tuples of lists and ndarrays.
+## np.zeros():The numpy.zeros() function returns a new array of given shape and type, with zeros.
+
 import numpy as np
 
 M = [[1, 2, 3],
