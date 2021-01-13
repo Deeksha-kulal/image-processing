@@ -76,7 +76,7 @@ cv2.imshow("mean of four pictures",meanImg)
 cv2.waitKey(0)
 output:
 ![image](https://user-images.githubusercontent.com/72547536/104431617-f0b93380-553c-11eb-9fd3-26236b40d6a9.png)
-[image](https://user-images.githubusercontent.com/72547536/104431617-f0b93380-553c-11eb-9fd3-26236b40d6a9.png)
+![image](https://user-images.githubusercontent.com/72547536/104432221-a4babe80-553d-11eb-962c-d85d7c87b57c.png)
 
 
 
