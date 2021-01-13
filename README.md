@@ -71,8 +71,20 @@ output:![image](https://user-images.githubusercontent.com/72547536/104428449-590
 ![image](https://user-images.githubusercontent.com/72547536/104428573-7dfa8900-5539-11eb-8e76-f35a9cc6e60f.png)
 ![image](https://user-images.githubusercontent.com/72547536/104428711-a3879280-5539-11eb-8715-f9e3800227a3.png)
 
-Program 5
+Program 5:Program to covert the given image to different color space
 
+import cv2
+img = cv2.imread('flower.jpg')
+yuv_img = cv2.cvtColor(img, cv2.COLOR_BGR2YUV)
+cv2.imshow('YUV image', yuv_img)
+
+hsv_img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+cv2.imshow('HSV image', hsv_img)
+
+rgb_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+cv2.imshow('RGB image', rgb_img)
+cv2.waitKey()
+output:
 
 
 
