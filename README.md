@@ -75,7 +75,8 @@ meanImg = im/len(files)
 cv2.imshow("mean of four pictures",meanImg)
 cv2.waitKey(0)
 output:
-![image](https://user-images.githubusercontent.com/72547536/104429335-6243b280-553a-11eb-9e08-6ef6f5c80748.png)
+![image](https://user-images.githubusercontent.com/72547536/104431617-f0b93380-553c-11eb-9fd3-26236b40d6a9.png)
+
 
 
 Program4:Convert the image to gray scale and binary image
