@@ -3,8 +3,8 @@
 ## description:
 ## A grayscale: (or graylevel) image is simply one in which the only colors are shades of gray. The reason for differentiating such images from any other sort of color image is that less information needs to be provided for each pixel. In fact a `gray' color is one in which the red, green and blue components all have equal intensity in RGB space, and so it is only necessary to specify a single intensity value for each pixel, as opposed to the three intensities needed to specify each pixel in a full color image.
 ## A binary image: is one that consists of pixels that can have one of exactly two colors, usually black and white. Binary images are also called bi-level or two-level. This means that each pixel is stored as a single bit—i.e., a 0 or 1. The names black-and-white, B&W, monochrome or monochromatic are often used for this concept, but may also designate any images that have only one sample per pixel, such as grayscale images
-to read an image we have to use imread()
-to display an image use the function imshow()
+## imread() to read an image we have to use imread()
+## imread() to display an image use the function imshow()
 ## waitkey() is keyboard binding function
 ## destroyAllWindows() simply destroy all the windows are created
 ## imwrite() used to save an image
