@@ -67,7 +67,8 @@ cv2.imshow('Gray Image',grayImage)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-output:
+output:![image](https://user-images.githubusercontent.com/72547536/104428449-59061600-5539-11eb-8258-72e1d7b612dd.png)
+
 
 
 
