@@ -63,6 +63,9 @@ output:
 ![image](https://user-images.githubusercontent.com/72547536/104426077-4d652000-5536-11eb-8783-b986db214576.png)
 
 Program3:Program to find sum and mean of the image
+description:
+listdir()-it is used to get the list of all files and directories in the specified directory
+
 import cv2
 import os
 path = 'C:\dee'
