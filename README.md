@@ -42,5 +42,16 @@ cv2.waitKey(0)
 ![image](https://user-images.githubusercontent.com/72547536/104424877-cc595900-5534-11eb-9ca5-906883fd0200.png)
 ![image](https://user-images.githubusercontent.com/72547536/104425028-0296d880-5535-11eb-8361-6c663d6eb55a.png)
 
+Program2(b): rotation
+import cv2
+image=cv2.imread('flower1.jpg')
+cv2.imshow('original',image)
+src=cv2.rotate(image,cv2.ROTATE_90_CLOCKWISE)
+cv2.imshow('output',src)
+cv2.waitKey(0)
+
+output:
+![image](https://user-images.githubusercontent.com/72547536/104425793-f2cbc400-5535-11eb-84ef-44be17feb0e8.png)
+
 
 
