@@ -21,3 +21,16 @@ cv2.imwrite("grayscale.png",image)
 ![image](https://user-images.githubusercontent.com/72547536/104418948-c186de80-559d-11eb-9f67-fb9e6d97e15f.png)
 ![image](https://user-images.githubusercontent.com/72547536/104419157-1165a580-559e-11eb-9c2f-cc79f4288cf0.png)
 
+
+Program2
+ Develop a Program to perform linear transformation on image
+import cv2
+image= cv2.imread('flower1.jpg')
+scale_percent = 500
+width = int(image.shape[1] * scale_percent / 100)
+height = int(image.shape[0] * scale_percent / 100)
+dsize = (width, height)
+output = cv2.resize(image, dsize)
+cv2.imshow('Original',output) 
+cv2.waitKey(0)
+
