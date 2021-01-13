@@ -86,6 +86,8 @@ cv2.imshow('RGB image', rgb_img)
 cv2.waitKey()
 output:
 ![image](https://user-images.githubusercontent.com/72547536/104429055-07aa5680-553a-11eb-8046-85257f5d5064.png)
+![image](https://user-images.githubusercontent.com/72547536/104429189-2e688d00-553a-11eb-8da8-11e600b6e986.png)
+
 
 
 
