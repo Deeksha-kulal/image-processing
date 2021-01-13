@@ -85,6 +85,12 @@ rgb_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 cv2.imshow('RGB image', rgb_img)
 cv2.waitKey()
 output:
+![image](https://user-images.githubusercontent.com/72547536/104429055-07aa5680-553a-11eb-8046-85257f5d5064.png)
+
+
+
+
+
 
 
 
