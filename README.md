@@ -159,6 +159,7 @@ C.waitKey(0)
 ## description:
 ## np.asarray():numpy.asarray()function is used when we want to convert input to an array. Input can be lists, lists of tuples, tuples, tuples of tuples, tuples of lists and ndarrays.
 ## np.zeros():The numpy.zeros() function returns a new array of given shape and type, with zeros.
+## The shape of an array can be defined as the number of elements in each dimension.
 
 import numpy as np
 M = [[1, 2, 3],
