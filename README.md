@@ -24,7 +24,11 @@ output:
 
 
 Program2: Develop a Program to perform linear transformation on image
-description:
+description:scaling
+Scaling, like translation is is a simple transformation which just scales the coordinates of an object. It is
+specified either by working directly with the local coordinates, or by expressing the coordinates in terms of
+Frames
+cv2.resize resize the image to the size disize and return numpy array
 cv2.imread()read the given file
 Scale percent is set 500 to scale the image 500% of its original dimension both width,height
 
@@ -43,6 +47,10 @@ cv2.waitKey(0)
 ![image](https://user-images.githubusercontent.com/72547536/104425028-0296d880-5535-11eb-8361-6c663d6eb55a.png)
 
 Program2(b): rotation
+description:
+A rotation is a transformation in which the object is rotated about a fixed point.
+The direction of rotation can be clockwise or anticlockwise.
+
 import cv2
 image=cv2.imread('flower1.jpg')
 cv2.imshow('original',image)
