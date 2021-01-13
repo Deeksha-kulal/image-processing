@@ -115,6 +115,12 @@ output:![image](https://user-images.githubusercontent.com/72547536/104428449-590
 ![image](https://user-images.githubusercontent.com/72547536/104428711-a3879280-5539-11eb-8715-f9e3800227a3.png)
 
 Program 5:Program to covert the given image to different color space
+description:
+color spacing:these are a way to represent the color channel present in the image that gives the image that particular hue
+hsv:HSV is a cylindrical color model that remaps the RGB primary colors into dimensions that are easier for humans to understand. Like the Munsell Color System, these dimensions are hue, saturation, and value.
+yuv:The YUV color model is the basic color model used in analogue color TV broadcasting. Initially YUV is the re-coding of RGB for transmission efficiency (minimizing bandwidth) and for downward compatibility with black-and white television.
+rgb:In the RGB model, each color appears as a combination of red, green, and blue. This model is called additive, and the colors are called primary colors. The primary colors can be added to produce the secondary colors of light (see Figure "Primary and Secondary Colors for RGB and CMYK Models") - magenta (red plus blue), cyan (green plus blue), and yellow (red plus green). The combination of red, green, and blue at full intensities makes white.
+
 
 import cv2
 img = cv2.imread('flower.jpg')
