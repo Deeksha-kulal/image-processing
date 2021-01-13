@@ -86,9 +86,9 @@ for im in imgs:
     #cv2.imshow(files[i],imgs[i])
     im+=imgs[i]
     i=i+1
-cv2.imshow("sum of four pictures",im)
+cv2.imshow("sum of three pictures",im)
 meanImg = im/len(files)
-cv2.imshow("mean of four pictures",meanImg)
+cv2.imshow("mean of three pictures",meanImg)
 cv2.waitKey(0)
 ## output:
 ![image](https://user-images.githubusercontent.com/72547536/104431617-f0b93380-553c-11eb-9fd3-26236b40d6a9.png)
