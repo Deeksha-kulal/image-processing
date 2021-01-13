@@ -65,6 +65,7 @@ output:
 Program3:Program to find sum and mean of the image
 description:
 listdir()-it is used to get the list of all files and directories in the specified directory
+append()this method in python adds the single item to the existing list
 
 import cv2
 import os
