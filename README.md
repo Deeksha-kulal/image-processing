@@ -121,7 +121,6 @@ hsv:HSV is a cylindrical color model that remaps the RGB primary colors into dim
 yuv:The YUV color model is the basic color model used in analogue color TV broadcasting. Initially YUV is the re-coding of RGB for transmission efficiency (minimizing bandwidth) and for downward compatibility with black-and white television.
 rgb:In the RGB model, each color appears as a combination of red, green, and blue. This model is called additive, and the colors are called primary colors. The primary colors can be added to produce the secondary colors of light (see Figure "Primary and Secondary Colors for RGB and CMYK Models") - magenta (red plus blue), cyan (green plus blue), and yellow (red plus green). The combination of red, green, and blue at full intensities makes white.
 
-
 import cv2
 img = cv2.imread('flower.jpg')
 yuv_img = cv2.cvtColor(img, cv2.COLOR_BGR2YUV)
@@ -139,6 +138,9 @@ output:
 ![image](https://user-images.githubusercontent.com/72547536/104429335-6243b280-553a-11eb-9e08-6ef6f5c80748.png)
 
 Program 6:Program to create an image from 2D array
+description:
+2dArray:two dimensional array is an array within an array.it is the type of array the position of an data element is refered by two indices instead of one.
+np.zeros():it returns a new array of given shape and type with zeros
 
 import numpy as np
 from PIL import Image
