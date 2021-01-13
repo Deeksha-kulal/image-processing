@@ -18,12 +18,17 @@ cv2.waitKey(0)
 cv2.destroyAllWindows() 
 cv2.imwrite("grayscale.png",image) 
 
+output:
 ![image](https://user-images.githubusercontent.com/72547536/104418948-c186de80-559d-11eb-9f67-fb9e6d97e15f.png)
 ![image](https://user-images.githubusercontent.com/72547536/104419157-1165a580-559e-11eb-9c2f-cc79f4288cf0.png)
 
 
-Program2
- Develop a Program to perform linear transformation on image
+Program2: Develop a Program to perform linear transformation on image
+description:
+cv2.imread()read the given file
+Scale percent is set 500 to scale the image 500% of its original dimension both width,height
+
+
 import cv2
 image= cv2.imread('flower1.jpg')
 scale_percent = 500
