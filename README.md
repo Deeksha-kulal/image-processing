@@ -8,3 +8,5 @@ cv2.imshow('Original', image)
 cv2.waitKey(0)
 cv2.destroyAllWindows() 
 cv2.imwrite("grayscale.png",image) 
+
+![image](https://user-images.githubusercontent.com/72547536/104418948-c186de80-559d-11eb-9f67-fb9e6d97e15f.png)
