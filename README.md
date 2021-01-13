@@ -161,11 +161,9 @@ C.waitKey(0)
 ## np.zeros():The numpy.zeros() function returns a new array of given shape and type, with zeros.
 
 import numpy as np
-
 M = [[1, 2, 3],
     [4, 5, 6],
     [7, 8, 9]]
-
 M = np.asarray(M)
 N = np.zeros(M.shape)
 def sumNeighbors(M,x,y):
@@ -181,7 +179,6 @@ def sumNeighbors(M,x,y):
 for i in range(M.shape[0]):
     for j in range(M.shape[1]):
         N[i][j] = sumNeighbors(M, i, j)
-
 print ("Original matrix:\n", M)
 print ("Summed neighbors matrix:\n", N)
 
