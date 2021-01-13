@@ -9,7 +9,7 @@ to display an image use the function imshow()
 ## destroyAllWindows() simply destroy all the windows are created
 ## imwrite() used to save an image
 
-import numpy as np
+## import numpy as np
 import cv2
 image=cv2.imread('flower1.jpg',1)
 cv2.imshow('Original', image) 
@@ -32,7 +32,7 @@ Frames
 ## cv2.imread()read the given file
 ## Scale percent is set 500 to scale the image 200% of its original dimension both width,height
 
-import cv2
+## import cv2
 image= cv2.imread('flower1.jpg')
 scale_percent = 200
 width = int(image.shape[1] * scale_percent / 100)
@@ -52,7 +52,7 @@ cv2.waitKey(0)
 A rotation is a transformation in which the object is rotated about a fixed point.
 The direction of rotation can be clockwise or anticlockwise.
 
-import cv2
+## import cv2
 image=cv2.imread('flower1.jpg')
 cv2.imshow('original',image)
 src=cv2.rotate(image,cv2.ROTATE_90_CLOCKWISE)
@@ -68,7 +68,7 @@ cv2.waitKey(0)
 ## listdir()-it is used to get the list of all files and directories in the specified directory
 ## append()this method in python adds the single item to the existing list
 
-import cv2
+## import cv2
 import os
 path = 'C:\dee'
 imgs = []
@@ -99,7 +99,7 @@ cv2.waitKey(0)
 ## A binary image: is one that consists of pixels that can have one of exactly two colors, usually black and white. Binary images are also called bi-level or two-level. This means that each pixel is stored as a single bit—i.e., a 0 or 1. The names black-and-white, B&W, monochrome or monochromatic are often used for this concept, but may also designate any images that have only one sample per pixel, such as grayscale images
 ## image thresholding: it is a technique in opencv which is the assignment of pixel values in reaction to the threshold value provided
 
-import cv2
+## import cv2
 originalImage=cv2.imread('b2.jpg')
 grayImage=cv2.cvtColor(originalImage,cv2.COLOR_BGR2GRAY)
 (thresh,blackAndWhiteImage)=cv2.threshold(grayImage,127,225,cv2.THRESH_BINARY)
@@ -120,7 +120,7 @@ cv2.destroyAllWindows()
 ## yuv:The YUV color model is the basic color model used in analogue color TV broadcasting. Initially YUV is the re-coding of RGB for transmission efficiency (minimizing bandwidth) and for downward compatibility with black-and white television.
 ## rgb:In the RGB model, each color appears as a combination of red, green, and blue. This model is called additive, and the colors are called primary colors. The primary colors can be added to produce the secondary colors of light (see Figure "Primary and Secondary Colors for RGB and CMYK Models") - magenta (red plus blue), cyan (green plus blue), and yellow (red plus green). The combination of red, green, and blue at full intensities makes white.
 
-import cv2
+## import cv2
 img = cv2.imread('flower.jpg')
 yuv_img = cv2.cvtColor(img, cv2.COLOR_BGR2YUV)
 cv2.imshow('YUV image', yuv_img)
@@ -141,7 +141,7 @@ cv2.waitKey()
 ## 2dArray:two dimensional array is an array within an array.it is the type of array the position of an data element is refered by two indices instead of one.
 ## np.zeros():it returns a new array of given shape and type with zeros
 
-import numpy as np
+## import numpy as np
 from PIL import Image
 import cv2 as C
 array=np.zeros([100,200,3],dtype=np.uint8)
