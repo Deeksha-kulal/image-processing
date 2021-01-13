@@ -1,5 +1,8 @@
 # image-processing
-Program1 : Program to display grayscale image
+Program1 : Devolop a program to display gray scale image using read and write operation
+description:
+A grayscale (or graylevel) image is simply one in which the only colors are shades of gray. The reason for differentiating such images from any other sort of color image is that less information needs to be provided for each pixel. In fact a `gray' color is one in which the red, green and blue components all have equal intensity in RGB space, and so it is only necessary to specify a single intensity value for each pixel, as opposed to the three intensities needed to specify each pixel in a full color image.
+
 
 import numpy as np
 import cv2
