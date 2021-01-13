@@ -10,3 +10,5 @@ cv2.destroyAllWindows()
 cv2.imwrite("grayscale.png",image) 
 
 ![image](https://user-images.githubusercontent.com/72547536/104418948-c186de80-559d-11eb-9f67-fb9e6d97e15f.png)
+![image](https://user-images.githubusercontent.com/72547536/104419157-1165a580-559e-11eb-9c2f-cc79f4288cf0.png)
+
