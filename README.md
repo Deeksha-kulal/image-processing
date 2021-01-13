@@ -118,6 +118,20 @@ output:
 ![image](https://user-images.githubusercontent.com/72547536/104429189-2e688d00-553a-11eb-8da8-11e600b6e986.png)
 ![image](https://user-images.githubusercontent.com/72547536/104429335-6243b280-553a-11eb-9e08-6ef6f5c80748.png)
 
+Program 6:Program to create an image from 2D array
+
+import numpy as np
+from PIL import Image
+import cv2 as C
+array=np.zeros([100,200,3],dtype=np.uint8)
+array[:,:100]=[150,128,0]
+array[:,100:]=[0,0,255]
+img=Image.fromarray(array)
+img.save('b2.jpg')
+img.show()
+C.waitKey(0)         
+
+Output:
 
 
 
