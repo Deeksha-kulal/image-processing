@@ -193,14 +193,6 @@ print ("Summed neighbors matrix:\n", N)
 ## output:
 ![image](https://user-images.githubusercontent.com/72547536/105159830-62a4f600-5ac4-11eb-884e-5d160b24c568.png)
 
-Original matrix:
- [[1 2 3]
- [4 5 6]
- [7 8 9]]
-Summed neighbors matrix:
- [[11. 19. 13.]
- [23. 40. 27.]
- [17. 31. 19.]]
 
 ## program 8:
 ## Develop a program to find the neighbours of each element in the matrix.
