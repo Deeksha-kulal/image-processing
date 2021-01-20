@@ -201,7 +201,7 @@ Summed neighbors matrix:
  [17. 31. 19.]]
 
 ## program 8:
-## Develop a program to find the  sum of neighbours of each element in the matrix.
+## Develop a program to find the neighbours of each element in the matrix.
 
 import numpy as np
 i=0
