@@ -218,7 +218,8 @@ neighbors(1, 2, 3)
 
 ## for neighbour(2,2,4)
 ## output:
-[image](https://user-images.githubusercontent.com/72547536/105154492-74839a80-5abe-11eb-9539-11a513eba199.png)
+![image](https://user-images.githubusercontent.com/72547536/105154765-b7de0900-5abe-11eb-8002-b1c19cdbf803.png)
+
 
 
 
