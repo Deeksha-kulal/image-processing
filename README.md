@@ -217,6 +217,8 @@ neighbors(1, 2, 3)
 ![image](https://user-images.githubusercontent.com/72547536/105154045-f58e6200-5abd-11eb-8046-7c884e1f2a24.png)
 
 ## for neighbour(2,2,4)
+## output:
+[image](https://user-images.githubusercontent.com/72547536/105154492-74839a80-5abe-11eb-9539-11a513eba199.png)
 
 
 
