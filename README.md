@@ -194,27 +194,8 @@ print ("Summed neighbors matrix:\n", N)
 ![image](https://user-images.githubusercontent.com/72547536/105159830-62a4f600-5ac4-11eb-884e-5d160b24c568.png)
 
 
-## program 8:
-## Develop a program to find the neighbours of each element in the matrix.
 
-import numpy as np
-i=0
-j=0
-a= np.array([[1,2,3,4,5], [2,3,4,5,6],[3,4,5,6,7],[4,5,6,7,8],[5,6,7,8,9]])
-print("a : ",str(a))
-def neighbors(radius, rowNumber, columnNumber):
-     return [[a[i][j] if  i >= 0 and i < len(a) and j >= 0 and j < len(a[0]) else 0
-                for j in range(columnNumber-1-radius, columnNumber+radius)]
-                    for i in range(rowNumber-1-radius, rowNumber+radius)]
-neighbors(1, 2, 3)
-## output:
-![image](https://user-images.githubusercontent.com/72547536/105154045-f58e6200-5abd-11eb-8046-7c884e1f2a24.png)
-
-## for neighbour(2,2,4)
-## output:
-![image](https://user-images.githubusercontent.com/72547536/105154765-b7de0900-5abe-11eb-8002-b1c19cdbf803.png)
-
-## program 9
+## program 8
 ## c++ program to perfome operator overloading
 
 #include <iostream>
