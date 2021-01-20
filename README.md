@@ -162,7 +162,7 @@ C.waitKey(0)
 ![image](https://user-images.githubusercontent.com/72547536/104432659-14c94480-553e-11eb-9b77-5604294c40fe.png)
 
 ## program 7:
-## Develop a program to find the neighbours of each element in the matrix.
+## Develop a program to find the  sum of neighbours of each element in the matrix.
 ## description:
 ## np.asarray():numpy.asarray()function is used when we want to convert input to an array. Input can be lists, lists of tuples, tuples, tuples of tuples, tuples of lists and ndarrays.
 ## np.zeros():The numpy.zeros() function returns a new array of given shape and type, with zeros.
@@ -200,7 +200,20 @@ Summed neighbors matrix:
  [23. 40. 27.]
  [17. 31. 19.]]
 
+## program 8:
+## Develop a program to find the  sum of neighbours of each element in the matrix.
 
+import numpy as np
+i=0
+j=0
+a= np.array([[1,2,3,4,5], [2,3,4,5,6],[3,4,5,6,7],[4,5,6,7,8],[5,6,7,8,9]])
+print("a : ",str(a))
+def neighbors(radius, rowNumber, columnNumber):
+     return [[a[i][j] if  i >= 0 and i < len(a) and j >= 0 and j < len(a[0]) else 0
+                for j in range(columnNumber-1-radius, columnNumber+radius)]
+                    for i in range(rowNumber-1-radius, rowNumber+radius)]
+neighbors(1, 2, 3)
+## output:
 
 
 
