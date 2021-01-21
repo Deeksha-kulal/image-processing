@@ -361,7 +361,8 @@ multiplication is
  19     46
  18     47
 
-## program 
+## program 9
+## program to find the neighbour of the matrix
 import numpy as np
 ini_array = np.array([[1, 2,5, 3], [4,5, 4, 7], [9, 6, 1,0]])
 print("initial_array : ", str(ini_array));
