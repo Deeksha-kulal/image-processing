@@ -2,13 +2,20 @@
 ## Program1 :
 ## Devolop a program to display gray scale image using read and write operation
 ## description:
-## A grayscale: (or graylevel) image is simply one in which the only colors are shades of gray. The reason for differentiating such images from any other sort of color image is that less information needs to be provided for each pixel. In fact a `gray' color is one in which the red, green and blue components all have equal intensity in RGB space, and so it is only necessary to specify a single intensity value for each pixel, as opposed to the three intensities needed to specify each pixel in a full color image.
-## A binary image: is one that consists of pixels that can have one of exactly two colors, usually black and white. Binary images are also called bi-level or two-level. This means that each pixel is stored as a single bit—i.e., a 0 or 1. The names black-and-white, B&W, monochrome or monochromatic are often used for this concept, but may also designate any images that have only one sample per pixel, such as grayscale images
-## imread() to read an image we have to use imread()
-## imread() to display an image use the function imshow()
-## waitkey() is keyboard binding function
-## destroyAllWindows() simply destroy all the windows are created
-## imwrite() used to save an image
+## A grayscale: 
+(or graylevel) image is simply one in which the only colors are shades of gray. The reason for differentiating such images from any other sort of color image is that less information needs to be provided for each pixel. In fact a `gray' color is one in which the red, green and blue components all have equal intensity in RGB space, and so it is only necessary to specify a single intensity value for each pixel, as opposed to the three intensities needed to specify each pixel in a full color image.
+## A binary image:
+is one that consists of pixels that can have one of exactly two colors, usually black and white. Binary images are also called bi-level or two-level. This means that each pixel is stored as a single bit—i.e., a 0 or 1. The names black-and-white, B&W, monochrome or monochromatic are often used for this concept, but may also designate any images that have only one sample per pixel, such as grayscale images
+## imread() 
+to read an image we have to use imread()
+## imread() 
+to display an image use the function imshow()
+## waitkey()
+is keyboard binding function
+## destroyAllWindows()
+simply destroy all the windows are created
+## imwrite() 
+used to save an image
 
 import numpy as np
 import cv2
@@ -30,9 +37,12 @@ cv2.imwrite("grayscale.png",image)
 Scaling, like translation is is a simple transformation which just scales the coordinates of an object. It is
 specified either by working directly with the local coordinates, or by expressing the coordinates in terms of
 Frames
-## cv2.resize() resize the image to the size disize and return numpy array
-## cv2.imread()read the given file
-## Scale percent is set 500 to scale the image 200% of its original dimension both width,height
+## cv2.resize() 
+resize the image to the size disize and return numpy array
+## cv2.imread()
+read the given file
+## Scale percent 
+is set 500 to scale the image 200% of its original dimension both width,height
 
 import cv2
 image= cv2.imread('flower1.jpg')
@@ -68,8 +78,10 @@ cv2.waitKey(0)
 ## Program3:
 ## Program to find sum and mean of the image
 ## description:
-## listdir()-it is used to get the list of all files and directories in the specified directory
-## append()this method in python adds the single item to the existing list
+## listdir()
+-it is used to get the list of all files and directories in the specified directory
+## append()
+this method in python adds the single item to the existing list
 
 import cv2
 import os
@@ -99,9 +111,12 @@ cv2.waitKey(0)
 ## Program4:
 ## Convert the image to gray scale and binary image
 ## description:
-## A grayscale: (or graylevel) image is simply one in which the only colors are shades of gray. The reason for differentiating such images from any other sort of color image is that less information needs to be provided for each pixel. In fact a `gray' color is one in which the red, green and blue components all have equal intensity in RGB space, and so it is only necessary to specify a single intensity value for each pixel, as opposed to the three intensities needed to specify each pixel in a full color image.
-## A binary image: is one that consists of pixels that can have one of exactly two colors, usually black and white. Binary images are also called bi-level or two-level. This means that each pixel is stored as a single bit—i.e., a 0 or 1. The names black-and-white, B&W, monochrome or monochromatic are often used for this concept, but may also designate any images that have only one sample per pixel, such as grayscale images
-## image thresholding: it is a technique in opencv which is the assignment of pixel values in reaction to the threshold value provided
+## A grayscale:
+(or graylevel) image is simply one in which the only colors are shades of gray. The reason for differentiating such images from any other sort of color image is that less information needs to be provided for each pixel. In fact a `gray' color is one in which the red, green and blue components all have equal intensity in RGB space, and so it is only necessary to specify a single intensity value for each pixel, as opposed to the three intensities needed to specify each pixel in a full color image.
+## A binary image:
+is one that consists of pixels that can have one of exactly two colors, usually black and white. Binary images are also called bi-level or two-level. This means that each pixel is stored as a single bit—i.e., a 0 or 1. The names black-and-white, B&W, monochrome or monochromatic are often used for this concept, but may also designate any images that have only one sample per pixel, such as grayscale images
+## image thresholding:
+it is a technique in opencv which is the assignment of pixel values in reaction to the threshold value provided
 
 import cv2
 originalImage=cv2.imread('b2.jpg')
@@ -120,10 +135,14 @@ cv2.destroyAllWindows()
 ## Program 5:
 ## Program to covert the given image to different color space
 ## description:
-## color spacing:these are a way to represent the color channel present in the image that gives the image that particular hue
-## hsv:HSV is a cylindrical color model that remaps the RGB primary colors into dimensions that are easier for humans to understand. Like the Munsell Color System, these dimensions are hue, saturation, and value.
-## yuv:The YUV color model is the basic color model used in analogue color TV broadcasting. Initially YUV is the re-coding of RGB for transmission efficiency (minimizing bandwidth) and for downward compatibility with black-and white television.
-## rgb:In the RGB model, each color appears as a combination of red, green, and blue. This model is called additive, and the colors are called primary colors. The primary colors can be added to produce the secondary colors of light (see Figure "Primary and Secondary Colors for RGB and CMYK Models") - magenta (red plus blue), cyan (green plus blue), and yellow (red plus green). The combination of red, green, and blue at full intensities makes white.
+## color spacing:
+these are a way to represent the color channel present in the image that gives the image that particular hue
+## hsv:
+HSV is a cylindrical color model that remaps the RGB primary colors into dimensions that are easier for humans to understand. Like the Munsell Color System, these dimensions are hue, saturation, and value.
+## yuv:
+The YUV color model is the basic color model used in analogue color TV broadcasting. Initially YUV is the re-coding of RGB for transmission efficiency (minimizing bandwidth) and for downward compatibility with black-and white television.
+## rgb:
+In the RGB model, each color appears as a combination of red, green, and blue. This model is called additive, and the colors are called primary colors. The primary colors can be added to produce the secondary colors of light (see Figure "Primary and Secondary Colors for RGB and CMYK Models") - magenta (red plus blue), cyan (green plus blue), and yellow (red plus green). The combination of red, green, and blue at full intensities makes white.
 
 import cv2
 img = cv2.imread('flower.jpg')
@@ -144,8 +163,10 @@ cv2.waitKey()
 ## Program 6:
 ## Program to create an image from 2D array
 ## description:
-## 2dArray:two dimensional array is an array within an array.it is the type of array the position of an data element is refered by two indices instead of one.
-## np.zeros():it returns a new array of given shape and type with zeros
+## 2dArray:
+two dimensional array is an array within an array.it is the type of array the position of an data element is refered by two indices instead of one.
+## np.zeros():
+it returns a new array of given shape and type with zeros
 
 import numpy as np
 from PIL import Image
@@ -164,8 +185,10 @@ C.waitKey(0)
 ## program 7:
 ## Develop a program to find the  sum of neighbours of each element in the matrix.
 ## description:
-## np.asarray():numpy.asarray()function is used when we want to convert input to an array. Input can be lists, lists of tuples, tuples, tuples of tuples, tuples of lists and ndarrays.
-## np.zeros():The numpy.zeros() function returns a new array of given shape and type, with zeros.
+## np.asarray():
+numpy.asarray()function is used when we want to convert input to an array. Input can be lists, lists of tuples, tuples, tuples of tuples, tuples of lists and ndarrays.
+## np.zeros():
+The numpy.zeros() function returns a new array of given shape and type, with zeros.
 ## The shape of an array can be defined as the number of elements in each dimension.
 
 import numpy as np
