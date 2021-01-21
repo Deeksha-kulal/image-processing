@@ -382,6 +382,8 @@ if cv2.waitKey(0) & 0xff == 27:
 ![image](https://user-images.githubusercontent.com/72547536/105328027-74e66900-5b84-11eb-8d95-788a8237ade2.png)
 ![image](https://user-images.githubusercontent.com/72547536/105328343-cee72e80-5b84-11eb-9de2-692682454cc7.png)
 ![image](https://user-images.githubusercontent.com/72547536/105328639-1b326e80-5b85-11eb-87fd-dcc0ebba9052.png)
+![image](https://user-images.githubusercontent.com/72547536/105328845-5634a200-5b85-11eb-8ad8-8e5468139864.png)
+
 
 
 
