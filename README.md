@@ -380,6 +380,9 @@ if cv2.waitKey(0) & 0xff == 27:
     
 ## output:
 ![image](https://user-images.githubusercontent.com/72547536/105328027-74e66900-5b84-11eb-8d95-788a8237ade2.png)
+![image](https://user-images.githubusercontent.com/72547536/105328343-cee72e80-5b84-11eb-9de2-692682454cc7.png)
+
+
 
 
 
