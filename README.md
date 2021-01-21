@@ -361,6 +361,9 @@ multiplication is
  19     46
  18     47
 
+
+## output:
+![image](https://user-images.githubusercontent.com/72547536/105338034-ed9ef280-5b8f-11eb-8633-caf3c18b533b.png)
 ## program 9
 ## write a program to display the negation of an image
 
