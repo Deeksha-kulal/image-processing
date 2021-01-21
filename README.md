@@ -361,10 +361,19 @@ multiplication is
  19     46
  18     47
 
-
+## program 
+import numpy as np
+ini_array = np.array([[1, 2,5, 3], [4,5, 4, 7], [9, 6, 1,0]])
+print("initial_array : ", str(ini_array));
+def neighbors(radius, rowNumber, columnNumber):
+    return[[ini_array[i][j]if i >= 0 and i < len(ini_array) and j >= 0 and j < len(ini_array[0]) else 0
+            for j in range(columnNumber-1-radius, columnNumber+radius)]
+           for i in range(rowNumber-1-radius, rowNumber+radius)]
+neighbors(1,2,1)
 ## output:
 ![image](https://user-images.githubusercontent.com/72547536/105338034-ed9ef280-5b8f-11eb-8633-caf3c18b533b.png)
-## program 9
+
+## program 10
 ## write a program to display the negation of an image
 
 from PIL import Image, ImageEnhance
@@ -376,7 +385,7 @@ img.enhance(2.0).show()
 ## output:
 ![image](https://user-images.githubusercontent.com/72547536/105326397-8e86b100-5b82-11eb-90a9-ec283fa83e17.png)
 
-## program 10
+## program 11
 ## program to perform threshold image
 
 import cv2  
@@ -411,7 +420,7 @@ if cv2.waitKey(0) & 0xff == 27:
 ![image](https://user-images.githubusercontent.com/72547536/105328845-5634a200-5b85-11eb-8ad8-8e5468139864.png)
 ![image](https://user-images.githubusercontent.com/72547536/105329038-9005a880-5b85-11eb-811b-20b95d870c77.png)
 
-## program 11:
+## program 12:
 ## program to perform gamma image
 import cv2
 import numpy as np
