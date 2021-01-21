@@ -338,6 +338,18 @@ multiplication is
  19     46
  18     47
 
+## program 9
+## write a program to display the negation of an image
+
+from PIL import Image, ImageEnhance
+img = Image.open("pic1.jpeg")
+img.show()
+img=ImageEnhance.Color(img)
+img.enhance(2.0).show()
+
+## output:
+
+
 
 
 
