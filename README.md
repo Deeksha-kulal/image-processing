@@ -377,6 +377,10 @@ cv2.imshow('Set to 0 Inverted', thresh5)
   
 if cv2.waitKey(0) & 0xff == 27:  
     cv2.destroyAllWindows() 
+    
+## output:
+![image](https://user-images.githubusercontent.com/72547536/105328027-74e66900-5b84-11eb-8d95-788a8237ade2.png)
+
 
 
 
