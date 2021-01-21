@@ -374,7 +374,7 @@ img.enhance(2.0).show()
 ![image](https://user-images.githubusercontent.com/72547536/105326397-8e86b100-5b82-11eb-90a9-ec283fa83e17.png)
 
 ## program 10
-## 
+## program to perform threshold image
 
 import cv2  
 import numpy as np  
@@ -409,7 +409,7 @@ if cv2.waitKey(0) & 0xff == 27:
 ![image](https://user-images.githubusercontent.com/72547536/105329038-9005a880-5b85-11eb-811b-20b95d870c77.png)
 
 ## program 11:
-## gamma image
+## program to perform gamma image
 import cv2
 import numpy as np
 img=cv2.imread("imagess.jpg")
@@ -420,6 +420,7 @@ cv2.imshow('a2',img3)
 cv2.waitKey(0)
 ## output:
 ![image](https://user-images.githubusercontent.com/72547536/105338034-ed9ef280-5b8f-11eb-8633-caf3c18b533b.png)
+
 
 
 
