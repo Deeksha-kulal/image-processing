@@ -372,7 +372,7 @@ def neighbors(radius, rowNumber, columnNumber):
            for i in range(rowNumber-1-radius, rowNumber+radius)]
 neighbors(1,2,1)
 ## output:
-![image](https://user-images.githubusercontent.com/72547536/105338034-ed9ef280-5b8f-11eb-8633-caf3c18b533b.png)
+![image](https://user-images.githubusercontent.com/72547536/106111355-ca7cc180-6100-11eb-8d26-a2564f6469ab.png)
 
 ## program 10
 ## write a program to display the negation of an image
