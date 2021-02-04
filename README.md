@@ -46,6 +46,7 @@ read the given file
 ## Scale percent 
 is set 500 to scale the image 200% of its original dimension both width,height
 
+```python
 import cv2
 image= cv2.imread('flower1.jpg')
 scale_percent = 200
@@ -55,6 +56,7 @@ dsize = (width, height)
 output = cv2.resize(image, dsize)
 cv2.imshow('Original',output) 
 cv2.waitKey(0)
+```
 
 ## output:
 ![image](https://user-images.githubusercontent.com/72547536/104424877-cc595900-5534-11eb-9ca5-906883fd0200.png)
@@ -66,12 +68,14 @@ cv2.waitKey(0)
 A rotation is a transformation in which the object is rotated about a fixed point.
 The direction of rotation can be clockwise or anticlockwise.
 
+```python
 import cv2
 image=cv2.imread('flower1.jpg')
 cv2.imshow('original',image)
 src=cv2.rotate(image,cv2.ROTATE_90_CLOCKWISE)
 cv2.imshow('output',src)
 cv2.waitKey(0)
+```
 
 ## output:
 ![image](https://user-images.githubusercontent.com/72547536/104425793-f2cbc400-5535-11eb-84ef-44be17feb0e8.png)
@@ -85,6 +89,7 @@ cv2.waitKey(0)
 ## append()
 this method in python adds the single item to the existing list
 
+```python
 import cv2
 import os
 path = 'C:\dee'
@@ -104,6 +109,8 @@ cv2.imshow("sum of three pictures",im)
 meanImg = im/len(files)
 cv2.imshow("mean of three pictures",meanImg)
 cv2.waitKey(0)
+```
+
 ## output:
 ![image](https://user-images.githubusercontent.com/72547536/104431617-f0b93380-553c-11eb-9fd3-26236b40d6a9.png)
 ![image](https://user-images.githubusercontent.com/72547536/104432221-a4babe80-553d-11eb-962c-d85d7c87b57c.png)
@@ -120,6 +127,7 @@ is one that consists of pixels that can have one of exactly two colors, usually 
 ## image thresholding:
 it is a technique in opencv which is the assignment of pixel values in reaction to the threshold value provided
 
+```python
 import cv2
 originalImage=cv2.imread('b2.jpg')
 grayImage=cv2.cvtColor(originalImage,cv2.COLOR_BGR2GRAY)
@@ -129,6 +137,7 @@ cv2.imshow('OriginalImagee',originalImage)
 cv2.imshow('Gray Image',grayImage)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+```
 
 ## output:![image](https://user-images.githubusercontent.com/72547536/104428449-59061600-5539-11eb-8258-72e1d7b612dd.png)
 ![image](https://user-images.githubusercontent.com/72547536/104428573-7dfa8900-5539-11eb-8e76-f35a9cc6e60f.png)
@@ -146,6 +155,7 @@ The YUV color model is the basic color model used in analogue color TV broadcast
 ## rgb:
 In the RGB model, each color appears as a combination of red, green, and blue. This model is called additive, and the colors are called primary colors. The primary colors can be added to produce the secondary colors of light (see Figure "Primary and Secondary Colors for RGB and CMYK Models") - magenta (red plus blue), cyan (green plus blue), and yellow (red plus green). The combination of red, green, and blue at full intensities makes white.
 
+``` python
 import cv2
 img = cv2.imread('flower.jpg')
 yuv_img = cv2.cvtColor(img, cv2.COLOR_BGR2YUV)
@@ -157,6 +167,7 @@ cv2.imshow('HSV image', hsv_img)
 rgb_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 cv2.imshow('RGB image', rgb_img)
 cv2.waitKey()
+```
 ## output:
 ![image](https://user-images.githubusercontent.com/72547536/104429055-07aa5680-553a-11eb-8046-85257f5d5064.png)
 ![image](https://user-images.githubusercontent.com/72547536/104429189-2e688d00-553a-11eb-8da8-11e600b6e986.png)
@@ -170,6 +181,7 @@ two dimensional array is an array within an array.it is the type of array the po
 ## np.zeros():
 it returns a new array of given shape and type with zeros
 
+```python
 import numpy as np
 from PIL import Image
 import cv2 as C
@@ -179,7 +191,8 @@ array[:,100:]=[0,0,255]
 img=Image.fromarray(array)
 img.save('b2.jpg')
 img.show()
-C.waitKey(0)         
+C.waitKey(0)  
+```
 
 ## Output:
 ![image](https://user-images.githubusercontent.com/72547536/104432659-14c94480-553e-11eb-9b77-5604294c40fe.png)
@@ -193,6 +206,7 @@ numpy.asarray()function is used when we want to convert input to an array. Input
 The numpy.zeros() function returns a new array of given shape and type, with zeros.
 ## The shape of an array can be defined as the number of elements in each dimension.
 
+``python
 import numpy as np
 M = [[1, 2, 3],
     [4, 5, 6],
@@ -214,6 +228,7 @@ for i in range(M.shape[0]):
         N[i][j] = sumNeighbors(M, i, j)
 print ("Original matrix:\n", M)
 print ("Summed neighbors matrix:\n", N)
+```
 
 ## output:
 ![image](https://user-images.githubusercontent.com/72547536/105159830-62a4f600-5ac4-11eb-884e-5d160b24c568.png)
@@ -223,6 +238,7 @@ print ("Summed neighbors matrix:\n", N)
 ## program 8
 ## c++ program to perfome operator overloading
 
+```python
 #include <iostream>
 using namespace std;
 class matrix
@@ -335,6 +351,7 @@ int main()
  p * q;
 return 0;
 } 
+```
 
 ## output:
 Enter the row and column size for the  matrix
@@ -365,6 +382,7 @@ multiplication is
 
 ## program 9
 ## program to find the neighbour of the matrix
+```python
 import numpy as np
 ini_array = np.array([[1, 2,5, 3], [4,5, 4, 7], [9, 6, 1,0]])
 print("initial_array : ", str(ini_array));
@@ -373,24 +391,26 @@ def neighbors(radius, rowNumber, columnNumber):
             for j in range(columnNumber-1-radius, columnNumber+radius)]
            for i in range(rowNumber-1-radius, rowNumber+radius)]
 neighbors(1,2,1)
+```
 ## output:
 ![image](https://user-images.githubusercontent.com/72547536/106111355-ca7cc180-6100-11eb-8d26-a2564f6469ab.png)
 
 ## program 10
 ## write a program to display the negation of an image
-
+``` python
 from PIL import Image, ImageEnhance
 img = Image.open("pic1.jpeg")
 img.show()
 img=ImageEnhance.Color(img)
 img.enhance(2.0).show()
+```
 
 ## output:
 ![image](https://user-images.githubusercontent.com/72547536/105326397-8e86b100-5b82-11eb-90a9-ec283fa83e17.png)
 
 ## program 11
 ## program to perform threshold image
-
+```python
 import cv2  
 import numpy as np  
  
@@ -415,6 +435,7 @@ cv2.imshow('Set to 0 Inverted', thresh5)
   
 if cv2.waitKey(0) & 0xff == 27:  
     cv2.destroyAllWindows() 
+    ```
     
 ## output:
 ![image](https://user-images.githubusercontent.com/72547536/105328027-74e66900-5b84-11eb-8d95-788a8237ade2.png)
@@ -425,6 +446,7 @@ if cv2.waitKey(0) & 0xff == 27:
 
 ## program 12:
 ## program to perform gamma image
+```python
 import cv2
 import numpy as np
 img=cv2.imread("imagess.jpg")
@@ -433,6 +455,7 @@ gamma_point_four=np.array(255*(img/255)**0.24,dtype='uint8')
 img3=cv2.hconcat([gamma_two_point_two,gamma_point_four])
 cv2.imshow('a2',img3)
 cv2.waitKey(0)
+```
 ## output:
 ![image](https://user-images.githubusercontent.com/72547536/105338034-ed9ef280-5b8f-11eb-8633-caf3c18b533b.png)
 
